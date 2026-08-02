@@ -1,15 +1,36 @@
+/* ------------------------
+   Bøler Blomst & Bolle
+   Versjon 2.0
+------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
 body{
     font-family: "Segoe UI", Arial, sans-serif;
     background:#f9f5ef;
     color:#333;
     line-height:1.6;
 }
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#F8F4EE;
+
+    color:#3B3B3B;
+
+    line-height:1.7;
 
 header{
     background:#ffffff;
@@ -18,15 +39,257 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
+/* ---------------- HEADER ---------------- */
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 8%;
+
+    background:rgba(248,244,238,.92);
+
+    backdrop-filter:blur(10px);
+
 header h1{
     font-size:3rem;
     color:#0f4d2f;
     margin-bottom:10px;
 }
 
+.logo{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    color:#355C46;
+
+    font-weight:700;
+
 header p{
     color:#b21f2d;
     font-size:1.3rem;
+}
+
+.logo span{
+
+    color:#B53D3D;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#355C46;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#B53D3D;
+
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px 60px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.overline{
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#B53D3D;
+
+    margin-bottom:15px;
+
+    font-size:.9rem;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+
+    color:#355C46;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.intro{
+
+    font-size:1.25rem;
+
+    max-width:620px;
+
+    margin:0 auto 40px;
+
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.green{
+
+    background:#355C46;
+
+    color:white;
+
+}
+
+.green:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.red{
+
+    background:#B53D3D;
+
+    color:white;
+
+}
+
+.red:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ---------------- KAMPANJE ---------------- */
+
+.kampanje{
+
+    padding:120px 8%;
+
+}
+
+.container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.kampanje h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+
+    color:#355C46;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.kampanje p{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.poster{
+
+    margin-top:50px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:80px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    text-align:center;
+
 }
 
 main{
@@ -76,3 +339,4 @@ footer{
     padding:40px;
     color:#666;
 }
+
